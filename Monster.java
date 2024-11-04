@@ -1,4 +1,4 @@
-package kadai9;
+package kadai10＿1;
 import java.util.*;
 public class Monster implements Character{
 	String name;

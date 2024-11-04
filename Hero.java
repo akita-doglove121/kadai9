@@ -1,4 +1,4 @@
-package kadai9;
+package kadai10＿1;
 
 public class Hero implements Character{
 	private String name;
@@ -80,7 +80,7 @@ public class Hero implements Character{
 		this.spd = spd;
 	}
 	
-void attack(Monster monster) {
+void HeroAttack(Monster monster) {
 	System.out.println(this.name + "の攻撃！");
 	int damage = this.atk - monster.getDfn();
 	if ( damage < 0) {

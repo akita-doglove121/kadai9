@@ -1,4 +1,4 @@
-package kadai9;
+package kadai10＿1;
 
 public class Magician implements Character{
 	String name;

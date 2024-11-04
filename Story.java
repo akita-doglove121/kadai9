@@ -1,11 +1,11 @@
-package kadai9;
+package kadai10＿1;
 import java.util.*;
 public class Story {
 	public static void main(String [] args) {
 		
 		//Scanner sc1 = new Scanner (System.in);
 		//勇者の作成
-	    Hero hero =new Hero();
+	    SuperHero hero =new SuperHero();
 	    hero.setName("ゆうしゃ1");
 	    hero.setHp(25);
 	    hero.setAtk(8);
@@ -21,7 +21,7 @@ public class Story {
 		
 		//Scanner sc3 = new Scanner(System.in);
 		//魔法使いの作成
-	    Magician magician =new Magician();
+	    SuperMagician magician =new SuperMagician();
 	
 	
 	    magician.setName("魔法使い1");
@@ -40,10 +40,10 @@ public class Story {
 		
 		//Scanner sc2 = new Scanner(System.in);
 		//モンスターの作成
-	    Monster monster =new Monster();
+	    SuperMonster monster =new SuperMonster();
 	    
 	    monster.setName("ドラゴン");
-	    monster.setHp(30);
+	    monster.setHp(100);
 	    monster.setAtk(8);
 	    monster.setDfn(2);
 	    monster.setSpd(4);
@@ -74,16 +74,16 @@ public class Story {
                 	    System.out.println("勇者たちは勝利した！");
                         return; // ゲーム終了
                     }
-            	if (character instanceof Hero) {
-            		Hero h = (Hero) character;
-            		hero.attack(monster);
+            	if (character instanceof SuperHero) {
+            		SuperHero h = (SuperHero) character;
+            		hero.HeroAttack(monster);
             	}
-            	else if (character instanceof Magician) {
-            		Magician mg = (Magician) character;
-            		magician.mg_attack(monster);
+            	else if (character instanceof SuperMagician) {
+            		SuperMagician mg = (SuperMagician) character;
+            		magician.MagicianAttack(monster);
             	}
-            	else if (character instanceof Monster) {
-                    Monster mon = (Monster) character;
+            	else if (character instanceof SuperMonster) {
+                    Monster mon = (SuperMonster) character;
                     monster.attack(hero, magician); 
             	}
             }
